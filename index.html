@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquería El Sabor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#menu">Menú</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#ubicacion">Ubicación</a>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section id="inicio">
+        <h1>🌮 EL SABOR 🌮</h1>
+        <p>Los mejores tacos de la ciudad preparados con ingredientes frescos y auténtico sabor mexicano.</p>
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu">
+
+        <h2>Nuestro Menú</h2>
+
+        <div class="menu-container">
+
+            <div class="item">
+                <h3>🌮 Taco al Pastor</h3>
+                <p>$25 MXN</p>
+                <button onclick="agregar('Taco al Pastor', 25)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌮 Taco de Asada</h3>
+                <p>$30 MXN</p>
+                <button onclick="agregar('Taco de Asada', 30)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌮 Taco de Suadero</h3>
+                <p>$28 MXN</p>
+                <button onclick="agregar('Taco de Suadero', 28)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌮 Taco de Chorizo</h3>
+                <p>$25 MXN</p>
+                <button onclick="agregar('Taco de Chorizo', 25)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌮 Taco de Carnitas</h3>
+                <p>$28 MXN</p>
+                <button onclick="agregar('Taco de Carnitas', 28)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌮 Taco Campechano</h3>
+                <p>$32 MXN</p>
+                <button onclick="agregar('Taco Campechano', 32)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🧀 Quesadilla Sencilla</h3>
+                <p>$45 MXN</p>
+                <button onclick="agregar('Quesadilla Sencilla', 45)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🧀 Quesadilla con Carne</h3>
+                <p>$60 MXN</p>
+                <button onclick="agregar('Quesadilla con Carne', 60)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌯 Burrito de Asada</h3>
+                <p>$85 MXN</p>
+                <button onclick="agregar('Burrito de Asada', 85)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌯 Burrito al Pastor</h3>
+                <p>$80 MXN</p>
+                <button onclick="agregar('Burrito al Pastor', 80)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌯 Burrito de Pollo</h3>
+                <p>$75 MXN</p>
+                <button onclick="agregar('Burrito de Pollo', 75)">Agregar</button>
+            </div>
+
+            <div class="item">
+                <h3>🌯 Burrito Especial</h3>
+                <p>$95 MXN</p>
+                <button onclick="agregar('Burrito Especial', 95)">Agregar</button>
+            </div>
+
+        </div>
+
+        <!-- 🛒 CARRITO FLOTANTE -->
+        <div id="carrito">
+            <h2>🛒 Tu Pedido</h2>
+
+            <div id="items-carrito"></div>
+
+            <p>Cantidad: <span id="cantidad">0</span></p>
+
+            <h3>Total: $<span id="total">0</span> MXN</h3>
+
+            <button onclick="vaciarCarrito()">Vaciar carrito</button>
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+
+        <p>📞 <a href="tel:+527151234567">(715) 123-4567</a></p>
+        <p>📧 <a href="mailto:contacto@taqueriaelsabor.com">contacto@taqueriaelsabor.com</a></p>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <p>📍 Zitácuaro, Michoacán, México</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Taquería El Sabor</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
